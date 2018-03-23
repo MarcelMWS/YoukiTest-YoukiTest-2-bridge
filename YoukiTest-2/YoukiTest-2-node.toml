@@ -1,0 +1,23 @@
+[parity]
+chain = "YoukiTest-2-spec.json"
+base_path = "YoukiTest-2_datadir"
+
+[network]
+port = 30308 # make sure it's different from sokol.toml network port
+discovery=true
+[rpc]
+cors = ["all"]
+interface = "all"
+hosts = ["all"]
+port = 8591 # port needed for truffle.js config. Please make sure it's different from sokol.toml
+apis = ["web3", "eth", "net", "parity", "rpc", "secretstore", "traces"]
+[websockets]
+disable = false
+port = 8541 # port for WS connection which you should provide in .env later as REACT_APP_FOREGIGN_WEB_SOCKETS_PARITY_URL
+interface = "all"
+origins = ["all"]
+apis = ["web3", "eth", "net", "parity", "rpc", "secretstore", "pubsub"]
+hosts = ["all"]
+[account]
+unlock = ["0x2e6c5780ff3a53705ac0c5824dcdd663e8e9a5d4"] # Please provide your OWN ETH public Key here for Validator
+password = ["parity_password"] # specify password for the  key abovev
