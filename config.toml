@@ -1,0 +1,34 @@
+estimated_gas_cost_of_withdraw = 0
+[home]
+#account which you specified as validator on Home network
+account = "0x0c79e608f923ead2b6331e9f7044f211c992cb2e" 
+#Full  IPC path to your HOME node
+ipc = "/Users/m.pohland/work/YoukiTest-YoukiTest-2-bridge/YoukiTest_datadir/jsonrpc.ipc"
+# How many block confirmation to wait to send a tx
+required_confirmations = 0
+
+[home.contract]
+
+bin = "HomeBridge_bytecode.bin"
+
+[foreign]
+account = "0x2e6c5780ff3a53705ac0c5824dcdd663e8e9a5d4"
+ipc = "/Users/m.pohland/work/YoukiTest-YoukiTest-2-bridge/YoukiTest-2/YoukiTest-2_datadir/jsonrpc.ipc"
+required_confirmations = 0
+
+[foreign.contract]
+bin = "ForeignBridge_bytecode.bin"
+
+[authorities]
+accounts = [
+  "0x0c79e608f923ead2b6331e9f7044f211c992cb2e",
+  "0x2e6c5780ff3a53705ac0c5824dcdd663e8e9a5d4"
+]
+required_signatures = 1
+
+[transactions]
+home_deploy = { gas = 3000000 }
+foreign_deploy = { gas = 3000000 }
+deposit_relay = { gas = 3000000 }
+withdraw_relay = { gas = 3000000 }
+withdraw_confirm = { gas = 3000000 }
