@@ -1,15 +1,29 @@
 [parity]
-chain = "spec.json"
-base_path = "parity_data"
+chain = "YoukiTest-spec.json"
+base_path = "YoukiTest_datadir" #folder where the blockchain will be synced and keys stored
 
 [network]
-reserved_peers="./bootnodes.txt"
-port = 30303
+reserved_peers="./YoukiTest-bootnode.txt"
+discovery=true
+port = 30305
 
 [rpc]
-apis = ["web3", "eth", "parity", "parity_set", "net", "traces", "rpc"]
+cors = ["all"]
+hosts = ["all"]
+apis = ["web3", "eth", "net", "parity", "rpc", "secretstore", "traces"]
 interface = "all"
-port=8545
+port=8545 # port needed for truffle.js config 
+
+[websockets]
+disable = false
+port = 8546 # port for WS connection which you should provide in .env later as REACT_APP_HOME_WEB_SOCKETS_PARITY_URL
+interface = "all"
+origins = ["all"]
+apis = ["web3", "eth", "net", "parity", "rpc", "secretstore", "pubsub"]
+hosts = ["all"]
+[account]
+unlock = ["0x0c79e608f923ead2b6331e9f7044f211c992cb2e"] # Please provide your OWN ETH public Key here
+password = ["parity_password"] # specify password for the  key above
 
 [misc]
 #log_file = "./logs/parity.log"
