@@ -1,0 +1,23 @@
+[parity]
+chain = "spec.json"
+base_path = "parity_data"
+
+[ui]
+port=8181
+
+[network]
+reserved_peers="bootnodes.txt"
+#nat="extip:52.29.206.42"
+port = 30304
+
+[rpc]
+#apis = ["web3", "eth", "parity", "parity_set", "net", "traces", "rpc"]
+apis = ["web3","eth","net" ]
+#threads = 4
+port=8555
+
+[websockets]
+port=8556
+
+[misc]
+#log_file = "/logs/parity.log"
