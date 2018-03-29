@@ -1,7 +1,7 @@
-/parity_data
-.DS_Store/*
+parity_data
+.DS_Store
 /YoukiTest-2/parity_data
-/YoukiTest_datadir/
+YoukiTest_datadir
 parity_password
 YoukiTest-2_datadir
 poa-parity-bridge-contracts

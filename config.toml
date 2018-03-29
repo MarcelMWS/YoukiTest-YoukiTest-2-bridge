@@ -1,4 +1,4 @@
-estimated_gas_cost_of_withdraw = 0
+estimated_gas_cost_of_withdraw = 100000
 [home]
 #account which you specified as validator on Home network
 account = "0x0c79e608f923ead2b6331e9f7044f211c992cb2e" 

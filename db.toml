@@ -1,7 +1,7 @@
-home_contract_address = "0xe6e58201b8e91e7aef0583e435594783d29ccb7a" #YOUR HOME CONTRACT ADDRESS THAT YOU DEPLOYED IN STEP#3 
-foreign_contract_address = "0x3c74ea0e4930ad593d21996fec52123db8671991" #YOUR FOREIGN CONTRACT ADDRESS THAT YOU DEPLOYED IN STEP#4
-home_deploy = 516700 # block number at which the contract was created for home contract
-foreign_deploy = 6621 # block number at which the contract was created for foreign contract
-checked_deposit_relay = 1400663 # last checked deposits events on Home network
-checked_withdraw_relay = 6342830 # last checked withdraw events on Foreign network
-checked_withdraw_confirm = 6342830 # last checked withdraw events on Foreign network
+home_contract_address = "0xcfdbe9d2f380b8c8bcad2e03220fec803feb57c9"
+foreign_contract_address = "0x47b4b16b90b906447819e5ea42d388f2e5dba89a"
+home_deploy = 584365
+foreign_deploy = 28969
+checked_deposit_relay = 601774
+checked_withdraw_relay = 34725
+checked_withdraw_confirm = 34725

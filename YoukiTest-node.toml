@@ -21,6 +21,7 @@ interface = "all"
 origins = ["all"]
 apis = ["web3", "eth", "net", "parity", "rpc", "secretstore", "pubsub"]
 hosts = ["all"]
+
 [account]
 unlock = ["0x0c79e608f923ead2b6331e9f7044f211c992cb2e"] # Please provide your OWN ETH public Key here
 password = ["parity_password"] # specify password for the  key above
